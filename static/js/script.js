@@ -19,6 +19,7 @@ var like1 = document.getElementById('like');
 
 var letras = document.getElementById('amei'); // ou:
 var vk = document.getElementById('vk');
+var clicado = false;
 
 
 
@@ -45,8 +46,20 @@ clk.addEventListener('click', function()
 
 like1.addEventListener('click', function() 
 {
-  letras.style.color = '#0cb2ea';
-  letras.textContent = "402 VOCÊ CURTIU!!"
+  
+  if (clicado == false)
+  {
+    letras.style.color = '#0cb2ea';
+    var calc = letras.textContent.replace(/[^0-9]/g,'');
+    calc = parseInt(calc)+1
+    letras.textContent = calc+" VOCÊ CURTIU!!"
+  }
+  else{
+    console.log("Você já deixou sua curtida!")
+    var calc = letras.textContent.replace(/[^0-9]/g,'');
+    letras.textContent = calc+" VOCÊ JÁ DEIXOU SUA CURTIDA!!"
+  }
+
 });
 
 
@@ -64,8 +77,7 @@ like1.addEventListener('click', function()
 
 vk.addEventListener('click', function() 
 {
-  window.location.href = "https://nubank.com.br/pagar/rbb9r/trxGp4Gfrx";
-
+  window.location.href = "donates";
 });
 
 
@@ -113,3 +125,30 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+
+/*
+  * Não atualizar pagina após click 
+  * Atualizar gostei ;)
+ */
+
+
+function func(){
+
+  event.preventDefault();
+  var newValue = $('#input-field-id').val();
+  if (clicado == false)
+  {
+    $.ajax({
+        type: 'POST',
+        url: '/',
+        data: "400",
+        datatype: 'JSON',
+    });
+
+    console.log("Enviado mané kk");
+    clicado = true;
+  }
+  else{}
+  
+}

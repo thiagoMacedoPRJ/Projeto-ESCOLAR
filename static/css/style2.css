@@ -90,7 +90,10 @@
 }
 
 
-
+#vkk
+{
+  transform: translateY(22px);
+}
 
 
 /*-----------------------------------*\
@@ -272,8 +275,8 @@ body {
 
 .nav-open-btn {
   color: var(--color);
-  font-size: 32px;
-  padding: 4px;
+  font-size: 45px;
+  padding: 7px;
 }
 
 .navbar {
