@@ -119,10 +119,6 @@ PySide6
 PySide6-Addons
 PySide6-Essentials
 PySocks
-python-dateutil
-python-magic-bin
-python-socketio
-python-utils
 pytz
 PyWavelets
 PyYAML
