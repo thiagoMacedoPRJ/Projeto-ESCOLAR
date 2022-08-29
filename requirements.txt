@@ -120,7 +120,6 @@ PySide6-Addons
 PySide6-Essentials
 PySocks
 python-dateutil
-python-dotenv
 python-magic-bin
 python-socketio
 python-utils
