@@ -146,7 +146,7 @@ shortuuid
 simple-image-download
 six
 sklearn
-smmap=
+smmap
 soupsieve
 SQLAlchemy
 sqlparse
@@ -159,7 +159,7 @@ termcolor
 Theano
 threadpoolctl
 tifffile
-tk==0.1.0
+tk
 tomli
 tqdm
 twilio
