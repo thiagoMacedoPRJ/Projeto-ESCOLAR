@@ -121,7 +121,6 @@ PySide6-Essentials
 PySocks
 python-dateutil
 python-dotenv
-python-engineio
 python-magic-bin
 python-socketio
 python-utils
