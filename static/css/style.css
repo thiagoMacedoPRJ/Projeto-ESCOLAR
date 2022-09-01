@@ -1014,6 +1014,51 @@ body {
 
 */
 
+#caixa
+{
+  border-radius: 10px;
+  transform: scale(1.3, 1.5);
+}
+
+#cardcaixa
+{
+  max-width: 262px;
+  transform: translateY(-13px);
+}
+
+
+#caixa2
+{
+  border-radius: 10px;
+  transform: scale(1.2, 0.89);
+}
+
+
+#cardcaixa2
+{
+  max-width: 262px;
+  transform: translateY(-13px);
+}
+
+
+
+
+
+#caixa3
+{
+  border-radius: 10px;
+  transform: scale(1.2, 0.95) translateY(11px);
+}
+
+
+#cardcaixa3
+{
+  max-width: 262px;
+  transform: translateY(-13px);
+}
+
+
+
 
 
 /**

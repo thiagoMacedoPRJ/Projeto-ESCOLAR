@@ -14,12 +14,24 @@ const overlay = document.querySelector("[data-overlay]");
 const elemArr = [navCloseBtn, overlay, navOpenBtn];
 
 var clk = document.getElementById('contat');
+
 var like1 = document.getElementById('like');
+var like2 = document.getElementById('like2');
+var like3 = document.getElementById('like3');
 
 
 var letras = document.getElementById('amei'); // ou:
-var vk = document.getElementById('vk');
+var letras2 = document.getElementById('amei2'); // ou:
+var letras3 = document.getElementById('amei3'); // ou:
+
+
+
 var clicado = false;
+var clicado2 = false;
+var clicado3 = false;
+
+
+var vk = document.getElementById('vk');
 
 
 
@@ -61,6 +73,48 @@ like1.addEventListener('click', function()
   }
 
 });
+
+
+
+like2.addEventListener('click', function() 
+{
+  
+  if (clicado2 == false)
+  {
+    letras2.style.color = '#0cb2ea';
+    var calc = letras2.textContent.replace(/[^0-9]/g,'');
+    calc = parseInt(calc)+1
+    letras2.textContent = calc+" VOCÊ CURTIU!!"
+  }
+  else{
+    console.log("Você já deixou sua curtida!")
+    var calc = letras2.textContent.replace(/[^0-9]/g,'');
+    letras2.textContent = calc+" VOCÊ JÁ DEIXOU SUA CURTIDA!!"
+  }
+
+});
+
+
+
+
+like3.addEventListener('click', function() 
+{
+  
+  if (clicado3 == false)
+  {
+    letras3.style.color = '#0cb2ea';
+    var calc = letras3.textContent.replace(/[^0-9]/g,'');
+    calc = parseInt(calc)+1
+    letras3.textContent = calc+" VOCÊ CURTIU!!"
+  }
+  else{
+    console.log("Você já deixou sua curtida!")
+    var calc = letras3.textContent.replace(/[^0-9]/g,'');
+    letras3.textContent = calc+" VOCÊ JÁ DEIXOU SUA CURTIDA!!"
+  }
+
+});
+
 
 
 
@@ -137,18 +191,68 @@ function func(){
 
   event.preventDefault();
   var newValue = $('#input-field-id').val();
+ 
   if (clicado == false)
   {
     $.ajax({
         type: 'POST',
         url: '/',
-        data: "400",
+        data: "1",
         datatype: 'JSON',
     });
 
     console.log("Enviado mané kk");
     clicado = true;
   }
+
+  else{}
+  
+}
+
+
+
+function func2(){
+
+  event.preventDefault();
+  var newValue = $('#input-field-id').val();
+ 
+  if (clicado2 == false)
+  {
+    $.ajax({
+        type: 'POST',
+        url: '/',
+        data: "2",
+        datatype: 'JSON',
+    });
+
+    console.log("Enviado mané kk");
+    clicado2 = true;
+  }
+
+  else{}
+  
+}
+
+
+
+function func3(){
+
+  event.preventDefault();
+  var newValue = $('#input-field-id').val();
+ 
+  if (clicado3 == false)
+  {
+    $.ajax({
+        type: 'POST',
+        url: '/',
+        data: "3",
+        datatype: 'JSON',
+    });
+
+    console.log("Enviado mané kk");
+    clicado3 = true;
+  }
+
   else{}
   
 }
