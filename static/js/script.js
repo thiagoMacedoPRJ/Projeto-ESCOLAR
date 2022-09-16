@@ -32,6 +32,7 @@ var clicado3 = false;
 
 
 var vk = document.getElementById('vk');
+var vkk = document.getElementById('vkk');
 
 
 
@@ -134,6 +135,12 @@ vk.addEventListener('click', function()
   window.location.href = "donates";
 });
 
+
+
+vkk.addEventListener('click', function() 
+{
+  window.location.href = "qrcode";
+});
 
 
 for (let i = 0; i < elemArr.length; i++) {

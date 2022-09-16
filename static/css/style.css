@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 THIAGO MACEDO DOS SANTOS
  */
 
 
@@ -11,7 +11,7 @@
 
 
 /*-----------------------------------*\
-  #CUSTOM PROPERTY
+  # PROPRIEDADE NÃO COSTUMISAVEL
 \*-----------------------------------*/
 
 :root {
@@ -152,8 +152,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
-
 
 
 
